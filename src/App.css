@@ -75,7 +75,7 @@
 }
 /* banner */
 .banner-sec{
-  background-image: url("src/assets/contact-banner.jpg");
+  background-image: url("/images/contact-banner.jpg");
   color: white;
   padding-top: 200px;
   padding-bottom: 170px;
@@ -89,7 +89,7 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-image: url("src/assets/banner-before.png");
+    background-image: url("/images/banner-before.png");
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -178,7 +178,7 @@
 }
 /* form section */
 .form-section{
-  background-image: url("src/assets/form.jpg");
+  background-image: url("/images/form.jpg");
   background-size: inherit;
   background-repeat: no-repeat;
 }
