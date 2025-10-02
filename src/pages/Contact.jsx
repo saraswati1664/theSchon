@@ -181,7 +181,7 @@ function Contact(){
             <Container>
                 <div className="text-center test-head"><h2>Built on Trust. Chosen by Experts</h2></div>
                 <Row className="test-row">
-                    <Col sm={12} md={12} lg={4}>
+                    <Col sm={12} md={12} lg={6} xl={4}>
                     <div className="cards">
                         <div><img src={testo} alt="" /></div>
                         <p>We partnered with Schon Doorways for a 120-apartment premium housing project. Their scale of production, delivery timelines, and on-site coordination made them a reliable execution partner. It’s rare to find a vendor that delivers both product quality and project efficiency.</p>
@@ -193,7 +193,7 @@ function Contact(){
                         </div>
                     </div>
                     </Col>
-                    <Col sm={12} md={12} lg={4}>
+                    <Col sm={12} md={12} lg={6} xl={4}>
                     <div className="cards">
                         <div><img src={testo} alt="" /></div>
                         <p>What sets Schon apart is their understanding of architectural vision. I needed custom aluminium systems for a minimalist villa project, and they executed every detail with precision. Their ability to handle complex briefs while maintaining design integrity is unmatched.</p>
@@ -205,7 +205,7 @@ function Contact(){
                         </div>
                     </div>
                     </Col>
-                    <Col sm={12} md={12} lg={4}>
+                    <Col sm={12} md={12} lg={6} xl={4}>
                     <div className="cards">
                         <div><img src={testo} alt="" /></div>
                         <p>From consultation to installation, the experience with Schon Doorways was seamless. Their team helped us choose the right doors and windows for our villa, and the quality speaks for itself—solid, sleek, and truly premium. I finally feel like I’ve built a home that will last generations.</p>
