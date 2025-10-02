@@ -10,6 +10,9 @@
   --DM-sans: "DM Sans", sans-serif;
   --playfair:"Playfair Display", serif;
 }
+body{
+  transition: all .2s ease;
+}
 /* navbar */
 .header-btn{
   background-color: transparent;
@@ -19,7 +22,7 @@
   padding: 12px 24px;
   border-radius: 8px;
   line-height: 100%;
-  transition: all 0.2s ease;
+  transition: all .2s ease;
 }
 .header-btn:hover{
   background-color: white;
@@ -56,10 +59,12 @@
     display: inline-block;
 }
 .contact-btns{
+  position: absolute;
+  top: 500px;   
+  left: 80px;   
   display: flex;
   align-items: center;
-  gap: 40px;
-  margin-top: 300px;
+  gap: 40px; 
 }
 .contact-btns button{
   padding: 16px 32px;
@@ -73,6 +78,20 @@
   color: white;
   background-color: #000;
 }
+.dropdown-menu{
+  background-color: #2a2a2a !important;
+  border: 1px solid #cbd4e660 !important;
+}
+.dropdown-menu a{
+  color: #cbd4e660 !important;
+  font-size: 18px;
+  font-family: var(--DM-sans) !important;
+}
+.dropdown-menu a:hover{
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+
 /* banner */
 .banner-sec{
   background-image: url("/images/contact-banner.jpg");
@@ -80,6 +99,9 @@
   padding-top: 200px;
   padding-bottom: 170px;
   position: relative;
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .banner-sec::before{
     content: "";
@@ -198,7 +220,7 @@
   margin-left: 30px;
 }
 .contact-form {
-  width: 400px;
+  width: 100%;
   margin: 40px  7px;
   text-align: center;
 }
@@ -435,4 +457,139 @@ ease;
 .lower-footer p{
   padding: 20px 0 ;
   margin-bottom: 0;
+}
+@media (max-width:992px) {
+  .image-logo{
+    height: 60px !important;
+  }
+  .form-left {
+    padding: 40px;
+}
+  .head-location {
+    font-size: 32px;
+}
+.card-link {
+    font-size: 20px;
+}
+.form-right h4 {
+    font-size: 24px;
+}
+.form-right {
+    padding: 60px 50px 60px;
+}
+.formbtn,.contact-form input, .contact-form textarea{
+    font-size: 16px;
+}
+}
+@media (max-width:768px) {
+  .banner-head {
+    font-size: 50px;
+}
+.banner-para {
+    font-size: 24px;  
+}
+.head-location {
+    font-size: 32px;
+}
+.location-sec {
+    padding: 50px 20px;
+}
+.para-location,.address h3,.card-link {
+    font-size: 20px;
+}
+.head-location,.test-head h2{
+    font-size: 32px;
+}
+  .image-logo {
+      width: 132px;
+      height: 41px !important;
+  }
+  .form-section {
+    background-repeat: repeat;
+}
+.test-row {
+    gap: 20px;
+}
+.locatoin-img {
+    width: auto;
+    height: 100px;
+}
+  
+}
+@media (max-width: 576px){
+  .navbar button.header-btn {
+    display: none !important;
+}
+  .navbar-toggle {
+    order: 2; 
+  }
+  .navbar-brand {
+    order: 1; 
+  }
+  .banner-head {
+    font-size: 40px;
+}
+/* banner */
+.banner-sec {
+    padding: 50px 20px;
+}
+.banner-para,.form-right h4{
+    font-size: 24px;
+}
+/* location */
+.location-sec {
+    padding: 40px 10px;
+}
+.card-body,.person-container h3{
+  font-size: 18px;
+}
+.address p,.row-2 p, .row-2  a{
+    font-size: 16px;
+}
+.locatoin-img {
+    width: auto;
+    height: 70px;
+}
+.row-2 img{
+  width: 32px;
+}
+.form-left {
+    padding: 50px 0px;
+    text-align: center
+}
+.card-link {
+    text-align: left;
+}
+.form-right h4{
+  text-align: center;
+}
+.form-right {
+    padding: 40px 20px 1px;
+}
+.contact-form input, .contact-form textarea {
+    font-size: 16px;
+    padding: 14px;
+}
+.form-section {
+    background-repeat: repeat;
+}
+.formbtn {
+    font-size: 16px;
+    width: 100%;
+}
+.tesimonial-section {
+    padding: 40px 0;
+}
+.test-row{
+    gap: 20px;
+}
+.footer-sec {
+    padding: 50px 0 0;
+}
+.footer-logo img {
+    width: 160px;
+}
+.footer-2 h3 {
+    margin-top: 24px;
+}
 }

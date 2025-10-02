@@ -10,7 +10,7 @@ function Footer(){
         <section className="footer-sec">
             <Container>
                 <Row className="footer">
-                    <Col lg={3} md={6}>
+                    <Col lg={3} md={6} sm={12}>
                     <div className="footer-1">
                         <div className="footer-logo">
                             <img src={logo} alt="" />
@@ -26,7 +26,7 @@ function Footer(){
                         </div>
                     </div>
                     </Col> 
-                    <Col lg={3}>
+                    <Col lg={3} md={6} sm={12}>
                     <div className="footer-2">
                         <h3>Our Existence</h3>
                         <ul>
@@ -36,7 +36,7 @@ function Footer(){
                         </ul>
                     </div>
                     </Col> 
-                    <Col lg={2}>
+                    <Col lg={2} md={6} sm={6} xs={6}>
                     <div className="footer-2">
                         <h3>Quick Links</h3>
                         <ul>
@@ -47,7 +47,7 @@ function Footer(){
                         </ul>
                     </div>
                     </Col> 
-                    <Col lg={2}>
+                    <Col lg={2} md={6} sm={6} xs={6}>
                     <div className="footer-2">
                         <h3>Products</h3>
                         <ul>
