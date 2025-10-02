@@ -121,7 +121,7 @@
 }
 /* location section */
 .location-sec{
-  background-image: url("src/assets/slant-background.jpg");
+  background-image: url("/images/slant-background.jpg");
   background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
