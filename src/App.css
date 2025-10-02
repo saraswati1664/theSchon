@@ -92,6 +92,7 @@ body{
   color: white !important;
 }
 
+
 /* banner */
 .banner-sec{
   background-image: url("/images/contact-banner.jpg");
@@ -539,6 +540,9 @@ ease;
   .navbar-toggle {
     order: 2; 
   }
+  .navbar-links {
+    flex-direction: column !important;
+}
   .navbar-brand {
     order: 1; 
   }
