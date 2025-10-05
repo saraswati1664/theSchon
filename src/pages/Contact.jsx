@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Modal} from "react-bootstrap";
 import locationimg1 from "../assets/location-img-1.png";
 import contactimg2 from "../assets/contactimg2.png";
@@ -12,6 +12,11 @@ import testo from "../assets/testo.png";
 import anitha from "../assets/anitha.png";
 import nikhil from "../assets/nikhil.png";
 import karan from "../assets/karan-mehta.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
 function Contact(){
      const [open, setOpen] = useState(false);
      const [open1, setOpen1] = useState(false);
@@ -23,6 +28,16 @@ function Contact(){
     setShowModal(true); 
     e.target.reset(); 
   };
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); 
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
     return (
         <>
         <section className="banner-sec">
@@ -180,7 +195,60 @@ function Contact(){
         <section className="tesimonial-section">
             <Container>
                 <div className="text-center test-head"><h2>Built on Trust. Chosen by Experts</h2></div>
-                <Row className="test-row">
+                {isMobile ? (<Swiper
+              modules={[Pagination]}
+              pagination={{ clickable: true }}
+              spaceBetween={20}
+              slidesPerView={1}
+            >
+                <SwiperSlide>
+                <div className="cards">
+                  <div><img src={testo} alt="" /></div>
+                  <p>
+                    We partnered with Schon Doorways for a 120-apartment premium
+                    housing project...
+                  </p>
+                  <div className="person-container">
+                    <img className="test-person" src={karan} alt="" />
+                    <h3>
+                      Karan Mehta <span>Director</span>
+                    </h3>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="cards">
+                  <div><img src={testo} alt="" /></div>
+                  <p>
+                    What sets Schon apart is their understanding of architectural vision...
+                  </p>
+                  <div className="person-container">
+                    <img className="test-person" src={nikhil} alt="" />
+                    <h3>
+                      Nikhil Shetty <span>Principal Architect</span>
+                    </h3>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="cards">
+                  <div><img src={testo} alt="" /></div>
+                  <p>
+                    From consultation to installation, the experience with Schon Doorways
+                    was seamless...
+                  </p>
+                  <div className="person-container">
+                    <img className="test-person" src={anitha} alt="" />
+                    <h3>
+                      Anitha Rao <span>Homeowner</span>
+                    </h3>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          ) : (<Row className="test-row">
                     <Col sm={12} md={12} lg={6} xl={4}>
                     <div className="cards">
                         <div><img src={testo} alt="" /></div>
@@ -218,10 +286,11 @@ function Contact(){
                     </div>
                     </Col>
                 </Row>
+          )}
             </Container>
         </section>
         </>
-    )
+    );
 }
 
 export default Contact;

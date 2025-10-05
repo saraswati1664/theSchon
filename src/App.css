@@ -448,7 +448,9 @@ ease;
 .modal-footer{
   border-top: none !important;
 }
-
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets {
+    display: none;
+}
 /* footer */
 .footer-sec{
   background: black;
@@ -682,6 +684,9 @@ ease;
 .formbtn {
     font-size: 16px;
     width: 100%;
+}
+.call {
+    margin: 20px 0;
 }
 .tesimonial-section {
     padding: 40px 0;
