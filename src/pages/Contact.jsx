@@ -205,8 +205,7 @@ function Contact(){
                 <div className="cards">
                   <div><img src={testo} alt="" /></div>
                   <p>
-                    We partnered with Schon Doorways for a 120-apartment premium
-                    housing project...
+                   We partnered with Schon Doorways for a 120-apartment premium housing project. Their scale of production, delivery timelines, and on-site coordination made them a reliable execution partner. It’s rare to find a vendor that delivers both product quality and project efficiency.
                   </p>
                   <div className="person-container">
                     <img className="test-person" src={karan} alt="" />
@@ -221,7 +220,7 @@ function Contact(){
                 <div className="cards">
                   <div><img src={testo} alt="" /></div>
                   <p>
-                    What sets Schon apart is their understanding of architectural vision...
+                    What sets Schon apart is their understanding of architectural vision. I needed custom aluminium systems for a minimalist villa project, and they executed every detail with precision. Their ability to handle complex briefs while maintaining design integrity is unmatched.
                   </p>
                   <div className="person-container">
                     <img className="test-person" src={nikhil} alt="" />
@@ -236,8 +235,7 @@ function Contact(){
                 <div className="cards">
                   <div><img src={testo} alt="" /></div>
                   <p>
-                    From consultation to installation, the experience with Schon Doorways
-                    was seamless...
+                    From consultation to installation, the experience with Schon Doorways was seamless. Their team helped us choose the right doors and windows for our villa, and the quality speaks for itself—solid, sleek, and truly premium. I finally feel like I’ve built a home that will last generations.
                   </p>
                   <div className="person-container">
                     <img className="test-person" src={anitha} alt="" />
