@@ -106,6 +106,38 @@ body{
   width: 41px;
   cursor: pointer;
 }
+.navbar-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-links .nav-item {
+  position: relative;   
+  flex-shrink: 0;       
+}
+.navbar-links .dropdown-menu {
+  position: absolute !important;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  z-index: 2000;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.2s ease;
+  pointer-events: none; 
+}
+
+.navbar-links .nav-item:hover > .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
 
 /* banner */
 .banner-sec{
@@ -565,6 +597,8 @@ ease;
 }
   .navbar-links {
     font-size: 16px;
+    align-items: flex-start;
+
 }
 .contact-btns button {
     font-size: 16px;
