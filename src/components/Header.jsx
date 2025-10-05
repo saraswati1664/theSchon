@@ -12,6 +12,7 @@ import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import logo from "../assets/logo.png"; 
 import sidebar from "../assets/sidebar.png";
 import HoverDropdown from "./Navdrop";
+import ProductMega from "./ProductMega";
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Col from 'react-bootstrap/Col';
@@ -106,13 +107,7 @@ if (window.scrollY > triggerPoint) {
                   <NavDropdown.Item href="#action5"><FontAwesomeIcon icon={faCircleChevronRight}  /> Quality Assurance</NavDropdown.Item>
                   <NavDropdown.Item href="#action6"><FontAwesomeIcon icon={faCircleChevronRight}  /> Sustainability</NavDropdown.Item>
                 </HoverDropdown>
-                <HoverDropdown title="Product" id="product-dropdown">
-                  <NavDropdown.Item href="#action3"><FontAwesomeIcon icon={faCircleChevronRight}  /> Doors</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4"><FontAwesomeIcon icon={faCircleChevronRight}  /> Windows</NavDropdown.Item>
-                  <NavDropdown.Item href="#action5"><FontAwesomeIcon icon={faCircleChevronRight}  /> Railings</NavDropdown.Item>
-                  <NavDropdown.Item href="#action6"><FontAwesomeIcon icon={faCircleChevronRight}  /> Glasses</NavDropdown.Item>
-                  <NavDropdown.Item href="#action6"><FontAwesomeIcon icon={faCircleChevronRight}  /> Cubicals</NavDropdown.Item>
-                </HoverDropdown>
+                  <ProductMega />
 
 
                   <Nav.Link href="#action2">Projects</Nav.Link>
