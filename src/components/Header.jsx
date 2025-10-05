@@ -64,7 +64,8 @@ if (window.scrollY > triggerPoint) {
             transition: "0.3s ease",
             position: "fixed",
             zIndex: "5",
-            width: "100%"
+            width: "100%",
+            paddingTop: "15px"
           }}
         >
           <Container>
@@ -76,7 +77,7 @@ if (window.scrollY > triggerPoint) {
               <img
                 src={sidebar}
                 alt="menu"
-                style={{ width: "35px", cursor: "pointer" }}
+                className="hamburger"
               />
             </Navbar.Toggle>
             <Navbar.Brand href="#" className="ms-2 avbar-brand">
@@ -89,11 +90,7 @@ if (window.scrollY > triggerPoint) {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="start"
-              style={{
-                backgroundColor: "#111111",
-                width: "88%",
-                paddingLeft: "80px"
-              }}
+              className="offcanvas-custom"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
