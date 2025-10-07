@@ -13,10 +13,6 @@
 body{
   transition: all .2s ease;
 }
-.navbar .container{
-    /* max-width: 1360px; */
-    /* padding: 0; */
-}
 /* navbar */
 .header-btn{
   background-color: transparent;
@@ -191,13 +187,14 @@ body{
 .mega-right li {
   margin: 8px 0;
 }
-.mega-right li a{
+.mega-right ul li a{
   color: white;
   text-decoration: none;
   font-weight: 200;
   font-family: var(--DM-sans);
-  /* font-size: 15px; */
+  font-size: 20px;
 }
+
 
 
 /* banner */
@@ -691,10 +688,10 @@ ease;
   .banner-head {
     font-size: 40px;
 }
-/* .navbar .container {
-    max-width: 1360px;
-    padding: 0 12px;
-} */
+.mega-menu {
+    /* width: 340px; */
+    width: 240px;
+}
 .Navbar.Offcanvas{
     padding-left: 20px !important;
 }
